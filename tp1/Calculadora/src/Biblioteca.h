@@ -8,12 +8,12 @@
 /// @pre
 /// @post
 /// @param mesaje El texto que se muestra para pedir numero
-/// @return El numer ingresado
+/// @return El numero ingresado
 float IngresarNumero(char mesaje[]);
 /// @fn float Suma(float, float)
 /// @brief Pide dos numeros para el calculo
 ///
-/// @pre
+/// @pres
 /// @post
 /// @param x Resive un numero ingresado
 /// @param y Resive el otro numero ingresado
