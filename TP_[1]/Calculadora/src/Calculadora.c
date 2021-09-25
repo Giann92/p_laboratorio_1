@@ -67,11 +67,11 @@ int main(void) {
 			rtaResta = Resta(x, y);
 			printf("b) calcular la resta ( %.2f - %.2f)\n", x, y);
 
-			if (y != 0) {
+			if (y != 0 ) {
 				rtaDv = Division(x, y);
 				printf("c) calcular la division ( %.2f / %.2f)\n", x, y);
 			} else {
-				printf("No se puede divir por cero \n");
+				rtaDv = 0;
 			}
 
 			rtaMul = Multiplicacion(x, y);
@@ -87,7 +87,13 @@ int main(void) {
 
 			printf("El resulado de A + B es = %2.f \n", rta);
 			printf("El resulado de A - B es = %.2f \n", rtaResta);
-			printf("El resulado de A / B es = %.2f \n", rtaDv);
+			if (y != 0){
+			printf("El resulado de A / B es = %.2f\n", rtaDv);
+			 }
+			else
+			{
+				printf("No se puede dividir por 0 \n");
+			}
 			printf("El resulado de A * B es = %.2f \n", rtaMul);
 			printf("El factorial de A es = %2.f \n", rtax);
 			printf("El factorial de B es = %2.f \n", rtay);
