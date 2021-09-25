@@ -17,11 +17,11 @@ int main(void) {
 	float x;
 	float y;
 	int opcion;
+	float rta;
 	char j = 'x';
 	char z = 'y';
 
-	x = (float) j;
-	y =(float) z;
+
 
 	do
 	{	printf("-------------------------------------\n");
@@ -65,12 +65,25 @@ int main(void) {
 				printf("a) calcular el factorial ( %.2f! y %.2f!)\n", x , y );
 			break;
 			case 4:
-				 Suma( x, y);
-				 Resta( x, y);
-				 Division( x, y);
-				 Multiplicacion( x, y);
-				 FactorialA(x);
-				 FactorialB(y);
+				rta  = Suma( x, y);
+					printf("El resulado de A + B es = %2.f \n" , rta);
+				rta =  Resta( x, y);
+				 printf("El resulado de A - B es = %.2f \n" , rta);
+				 if (y != 0) {
+				rta =  Division( x, y);
+					printf("El resulado de A / B es = %.2f \n" , rta);
+				}
+				else
+				{
+					printf("No se puede divir por cero \n");
+				}
+
+				rta = Multiplicacion( x, y);
+				 printf("El resulado de A * B es = %.2f \n" , rta);
+				rta =  FactorialA(x);
+				 printf("El factorial de A es = %2.f \n" , rta);
+				rta = FactorialB(y);
+				 printf("El factorial de B es = %2.f \n" , rta);
 
 			break;
 			case 5:
